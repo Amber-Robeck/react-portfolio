@@ -1,0 +1,44 @@
+@import "../../global.scss";
+
+
+.intro{
+    background-color: #816f7d;
+    display:flex;
+    align-items: center;
+
+    .left{
+        flex: 0.5;
+        justify-content: space-around;
+
+        .imageCont{
+            width: 600px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            background-color: $mainColor;
+            border-radius: 50%;
+            border-top-right-radius: 0%;
+            border-bottom-right-radius: 0%;
+
+            img{
+                height: 100%;
+                border-bottom-left-radius: 50% 100%;
+                border-bottom-right-radius: 50% 100%;
+                border-top-left-radius: 60% 100%;
+                border-top-right-radius: 60% 100%;
+            }
+        }
+    }
+
+    .right{
+        flex: 0.5;
+        font-size: 25px;
+        color: $mainColor;
+
+        .itemContainer{
+            a{
+                color: inherit;
+            }
+        }
+    }
+}
