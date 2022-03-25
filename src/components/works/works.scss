@@ -1,3 +1,77 @@
 .works{
     background-color: #37273d;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    .head-text{
+        // flex-direction: column;
+        color: #6c6c6c;
+        text-align: center;
+        font-size: 5rem;
+        font-weight: bolder;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .projects{
+       display: grid;
+       grid-template-areas:
+        'one'
+        'two'
+        'three'
+        'four'
+        'five';
+       gap: 1.5rem;
+
+
+       :nth-child(1){
+       grid-area: one;
+       }
+       :nth-child(2){
+        grid-area: two;
+        }
+        :nth-child(3){
+        grid-area: three;
+        }
+        :nth-child(4){
+        grid-area: four;
+        }
+        :nth-child(5){
+        grid-area: five;
+        }
+    
+    
+
+        .card{
+            background-color: #6c6c6c;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            color: whitesmoke;
+            align-items: center;
+            border-radius: 2rem;
+            // justify-content: center;
+
+            .card-img-top{
+                border-radius: 2rem;
+            }
+            
+            .card-body{
+                align-items: center;
+                padding: 1rem;
+            }
+        }
+    }
+    @media(min-width:50rem){
+        .projects{
+            grid-template-areas: 
+            'one one two five'
+            'three four four five'
+        }
+    }
 }
